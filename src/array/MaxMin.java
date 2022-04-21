@@ -49,8 +49,9 @@ public class MaxMin {
 
     public static void main(String[] args){
         long startTime = System.nanoTime();
-        int arr[] = {99,99};
-        System.out.println(Arrays.toString(minmax(arr)));
+        //int arr[] = {99,4646,1,94,64,94,794,-3000};
+        minmax(new int[]{99, 4646, 1, 94, 64, 94, 794, -3000});
+        //System.out.println(Arrays.toString(minmax(arr)));
         long endTime   = System.nanoTime();
         long totalTime = endTime - startTime;
         System.out.println(totalTime);
