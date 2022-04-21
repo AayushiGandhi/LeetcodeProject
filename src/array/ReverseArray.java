@@ -18,8 +18,15 @@ public class ReverseArray {
     }
 
     public static void main(String[] args){
-        System.out.println(Arrays.toString( reverseArray(new int[]{1, 2, 3, 4, 5})));
+        long startTime = System.nanoTime();
+
+
+        //System.out.println(Arrays.toString( reverseArray(new int[]{1, 2, 3, 4, 5})));
         System.out.println(Arrays.toString( reverseArray(new int[]{1, 2, 3, 4, 5, 6})));
+
+        long endTime   = System.nanoTime();
+        long totalTime = endTime - startTime;
+        System.out.println(totalTime);
     }
 }
 
